@@ -17,7 +17,7 @@ class FizzBuzz
 		{
 			$numbers[$i] = $i;
 
-			if ($i == 3) {
+			if ($i % 3== 0) {
 				$numbers[$i] = 'Fizz';
 			}
 
