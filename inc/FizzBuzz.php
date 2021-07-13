@@ -21,7 +21,7 @@ class FizzBuzz
 				$numbers[$i] = 'Fizz';
 			}
 
-			if ($i == 5) {
+			if ($i % 5 == 0) {
 				$numbers[$i] = 'Buzz';
 			}
 

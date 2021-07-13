@@ -47,6 +47,18 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
 		}
 	}
 
+	public function testEveryMultipleOfFiveIsBuzz()
+	{
+		$numbers = $this->fizzBuzz->getData();
+
+		for ($i = 1; $i <= count($numbers); $i++) {
+			if ($i % 5 == 0 && $i % 3 !== 0) {
+				$this->assertEquals('Buzz', $numbers[$i]);
+			}
+		}
+
+	}
+
 	public function testGetDataMustReturnOneHunderNumbers()
 	{
 		$this->assertEquals(100, count($this->fizzBuzz->getData()));
